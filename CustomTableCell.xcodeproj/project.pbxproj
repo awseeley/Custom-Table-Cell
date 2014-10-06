@@ -13,6 +13,8 @@
 		946F51DC19E16AB2007B258D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946F51DB19E16AB2007B258D /* Images.xcassets */; };
 		946F51DF19E16AB2007B258D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946F51DD19E16AB2007B258D /* LaunchScreen.xib */; };
 		946F51EB19E16AB2007B258D /* CustomTableCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F51EA19E16AB2007B258D /* CustomTableCellTests.swift */; };
+		946F51FB19E17F69007B258D /* vwTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946F51FA19E17F69007B258D /* vwTblCell.xib */; };
+		946F51FD19E17FCE007B258D /* TblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F51FC19E17FCE007B258D /* TblCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		946F51E419E16AB2007B258D /* CustomTableCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTableCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		946F51E919E16AB2007B258D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		946F51EA19E16AB2007B258D /* CustomTableCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCellTests.swift; sourceTree = "<group>"; };
+		946F51FA19E17F69007B258D /* vwTblCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vwTblCell.xib; sourceTree = "<group>"; };
+		946F51FC19E17FCE007B258D /* TblCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				946F51D419E16AB2007B258D /* AppDelegate.swift */,
 				946F51D619E16AB2007B258D /* ViewController.swift */,
+				946F51FA19E17F69007B258D /* vwTblCell.xib */,
+				946F51FC19E17FCE007B258D /* TblCell.swift */,
 				946F51D819E16AB2007B258D /* Main.storyboard */,
 				946F51DB19E16AB2007B258D /* Images.xcassets */,
 				946F51DD19E16AB2007B258D /* LaunchScreen.xib */,
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				946F51DA19E16AB2007B258D /* Main.storyboard in Resources */,
+				946F51FB19E17F69007B258D /* vwTblCell.xib in Resources */,
 				946F51DF19E16AB2007B258D /* LaunchScreen.xib in Resources */,
 				946F51DC19E16AB2007B258D /* Images.xcassets in Resources */,
 			);
@@ -214,6 +221,7 @@
 			files = (
 				946F51D719E16AB2007B258D /* ViewController.swift in Sources */,
 				946F51D519E16AB2007B258D /* AppDelegate.swift in Sources */,
+				946F51FD19E17FCE007B258D /* TblCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +415,7 @@
 				946F51F019E16AB2007B258D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		946F51F119E16AB2007B258D /* Build configuration list for PBXNativeTarget "CustomTableCellTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				946F51F319E16AB2007B258D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
