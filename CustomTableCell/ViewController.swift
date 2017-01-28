@@ -14,39 +14,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // 1
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         // Register custom cell
-        var nib = UINib(nibName: "vwTblCell", bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: "cell")
-        
+        let nib = UINib(nibName: "vwTblCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "cell")
     }
     
     // 2
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.tableData.count
     }
     
     
     // 3
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell 	{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell 	{
         
-        var cell:TblCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as! TblCell
+        let cell:TblCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! TblCell
         
         cell.lblCarName.text = tableData[indexPath.row]
         cell.imgCarName.image = UIImage(named: tableData[indexPath.row])
         
         return cell
-        
     }
     
     // 4
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Row \(indexPath.row) selected")
     }
     
     // 5
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
     
